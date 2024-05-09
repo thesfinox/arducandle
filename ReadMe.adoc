@@ -1,0 +1,47 @@
+:Author: thesfinox
+:Email: riccardo.finotello@gmail.com
+:Date: 09/10/2024
+:Revision: v1.0.0
+:License: Public Domain
+
+= ArduCandle
+
+The _ArduCandle_ is a simple project for a candle flickering effect using an Arduino Nano (ESP32), LEDs, and a button.
+
+== Step 1: Installation 
+
+The development kit used for this project is a **Arduino Nano ESP32**, and the documentation refers to that module.
+However, any board should do the trick.
+
+== Step 2: Assemble the circuit
+
+The circuit is very simple:
+
+1. connect the two LEDs to the ground with 220 Ohm resistors;
+2. connect the anodes to pins 2 and 3 of the Arduino Nano;
+3. connect the button to ground using a 10 kOhm resistor;
+4. connect the grounded side of the button to pin 7 of the Arduino Nano;
+5. (optional) for better deboucing, insert a 2 uF capacitor between the connection to the board and ground.
+
+=== Folder structure
+
+....
+  arducandle              => Arduino sketch folder
+  ├── arducandle.ino      => main Arduino file
+  └── ReadMe.adoc         => this file
+....
+
+=== License
+This project is released under a GNU General Public License v3.0.
+
+=== Bill Of Material
+
+|===
+|Part name             | Quantity        
+|Arduino Nano ESP32    | 1    
+|Coloured LEDs         | 2
+|220 Ohm resistor      | 2   
+|10 kOhm resistor      | 1
+|Button (6 mm)         | 1
+|2 uF capacitor        | 1
+|===
