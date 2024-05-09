@@ -52,7 +52,7 @@ void loop() {
   {
     for (int i = 0; i < 2; i++)
     { 
-      analogWrite(ledPins[i], random(120) + 135);  // use random for flickering effect
+      analogWrite(ledPins[i], random(155) + 100);  // use random for flickering effect
     }
   }
   else
@@ -64,7 +64,6 @@ void loop() {
   }
 
   // Random delay for flickering effect
-  Serial.print("end cycle\n");
   buttonReadingLast = buttonReading;
   delay(random(100));
 }
